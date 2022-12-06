@@ -9,10 +9,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="408dp"
+        android:text="Get the rates converted within seconds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="280dp"
+        android:ems="10"
+        android:hint="Enter the amount"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="168dp"
+        android:onClick="savebutton"
+        android:text="Convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="276dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uae"
+        tools:ignore="ContentDescription" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
