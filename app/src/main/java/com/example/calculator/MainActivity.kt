@@ -10,17 +10,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+    fun savebutton(view: View){
+        val rate=rate.text.toString().toFloat()
 
-        buttonn.setOnClickListener() {
-            val intent = Intent(this, page2::class.java)
-            startActivity(intent)
-        }
-        fun savebutton(view: View){
-            val rate=rate.text.toString().toInt()
-
-            val intent=Intent(this@MainActivity, page2::class.java)
-            intent.putExtra("Rate",rate)
-            startActivity(intent)
-        }
+        val intent=Intent(this@MainActivity, page2::class.java)
+        intent.putExtra("Rate",rate)
+        startActivity(intent)
     }
 }

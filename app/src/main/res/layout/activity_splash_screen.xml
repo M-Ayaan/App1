@@ -4,31 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/back_ground"
     tools:context=".SplashScreen">
 
     <TextView
         android:id="@+id/splashText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="432dp"
-        android:fontFamily="sans-serif-medium"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="528dp"
+        android:fontFamily="@font/galada"
+        android:gravity="center"
         android:text="Currency Calculator"
-        android:textColor="@color/teal_200"
-        android:textSize="20dp"
+        android:textColor="@android:color/system_accent1_800"
+        android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="s" />
 
     <ImageView
-        android:id="@+id/splashLogo"
-        android:layout_width="159dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="124dp"
+        android:id="@+id/logo"
+        android:layout_width="339dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ContentDescription" />
+        app:srcCompat="@drawable/logoo" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="112dp"
+        android:fontFamily="@font/galada"
+        android:text="'Get your rates converted faster'"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

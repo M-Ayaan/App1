@@ -23,6 +23,7 @@
         android:layout_marginBottom="280dp"
         android:ems="10"
         android:hint="Enter the amount"
+        android:drawableEnd="@drawable/ic_baseline"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -51,6 +52,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/uae"
         tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter the amount in UAE Dirham to convert.\n Press Convert to get the rates."
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="187dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
