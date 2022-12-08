@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_marginStart="84dp"
         android:layout_marginBottom="408dp"
         android:text="Get the rates converted within seconds"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -21,10 +23,14 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="280dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_baseline"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
         android:ems="10"
         android:hint="Enter the amount"
-        android:drawableEnd="@drawable/ic_baseline"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -62,6 +68,7 @@
         android:gravity="center"
         android:text="Enter the amount in UAE Dirham to convert.\n Press Convert to get the rates."
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
