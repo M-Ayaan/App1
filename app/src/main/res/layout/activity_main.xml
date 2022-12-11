@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
+    android:background="@drawable/back_ground"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginBottom="408dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="420dp"
         android:text="Get the rates converted within seconds"
+        android:textColor="#21302F"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -29,6 +30,8 @@
         android:paddingLeft="10dp"
         android:ems="10"
         android:hint="Enter the amount"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,6 +46,8 @@
         android:layout_marginBottom="168dp"
         android:onClick="savebutton"
         android:text="Convert"
+        android:textColor="#ffe047"
+        android:textColorHighlight="#455E5C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,14 +68,25 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="187dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:text="Enter the amount in UAE Dirham to convert.\n Press Convert to get the rates."
+        android:textColor="#455E5C"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="123dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

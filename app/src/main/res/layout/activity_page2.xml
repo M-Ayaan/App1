@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#455E5C"
     tools:context=".page2">
 
     <ImageView
@@ -170,7 +171,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textInd"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/custom_input"
         app:srcCompat="@drawable/irupee" />
 
     <ImageView

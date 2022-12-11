@@ -36,5 +36,6 @@ val indTxt = findViewById<TextView>(R.id.textInd)
         canTxt.text= anscan.toString()
 
 
+
     }
 }
