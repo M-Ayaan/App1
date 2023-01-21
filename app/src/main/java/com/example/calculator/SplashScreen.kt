@@ -18,7 +18,7 @@ class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        val topAnimation = AnimationUtils.loadAnimation(this, R.anim.top_animation)
+        val topAnimation = AnimationUtils.loadAnimation(this, R.anim.spin_animation)
         val bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
 
         val logo = findViewById<ImageView>(R.id.logo)
@@ -37,6 +37,6 @@ class SplashScreen : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 2500)
+        }, 3500)
     }
 }

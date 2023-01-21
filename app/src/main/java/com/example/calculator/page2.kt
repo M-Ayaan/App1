@@ -1,14 +1,19 @@
 package com.example.calculator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_page2.*
 
 class page2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page2)
+
+
+            backBtn.setOnClickListener({startActivity(Intent(this, MainActivity::class.java))})
 val indTxt = findViewById<TextView>(R.id.textInd)
         val banTxt = findViewById<TextView>(R.id.textBan)
         val usTxt = findViewById<TextView>(R.id.textUs)

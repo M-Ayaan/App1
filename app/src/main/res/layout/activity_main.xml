@@ -47,6 +47,7 @@
         android:onClick="savebutton"
         android:text="Convert"
         android:textColor="#ffe047"
+        android:textStyle="bold"
         android:textColorHighlight="#455E5C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
